@@ -65,8 +65,12 @@ body {
           color: #fff;
           padding: 10px 10px;
           display: inherit; }
-          .util-nav .container .util-nav-content .util-nav-list li a .fa {
+          .util-nav .container .util-nav-content .util-nav-list li a i {
             padding: 0 4px; }
+        .util-nav .container .util-nav-content .util-nav-list .dropdown .dropdown-menu li {
+          display: none; }
+        .util-nav .container .util-nav-content .util-nav-list .dropdown:hover .dropdown-menu li {
+          display: block; }
 
 .dropdown {
   position: relative; }
@@ -78,11 +82,48 @@ body {
     flex-flow: column nowrap;
     border-radius: 2px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-    margin-top: -4px;
-    display: none; }
+    margin-top: -4px; }
     .dropdown .dropdown-menu li a:hover {
       background-color: #0033a0;
       border-radius: 2px; }
-    .dropdown .dropdown-menu.show-dropdown {
-      display: flex;
-      flex-flow: column nowrap; }
+
+/* Flag styles*/
+a.flag-position {
+  display: flex !important;
+  flex-flow: row nowrap;
+  align-items: center; }
+
+.flag-icon {
+  background: url(../images/flags-sprite.png);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: cover;
+  margin-right: 8px; }
+
+.usa-flag {
+  background-position-y: -96px; }
+
+.sin-flag {
+  background-position-y: -24px; }
+
+.aus-flag {
+  background-position-y: -48px; }
+
+.uk-flag {
+  background-position-y: -72px; }
+
+.frc-flag {
+  background-position-y: -120px; }
+
+.ger-flag {
+  background-position-y: -144px; }
+
+.ita-flag {
+  background-position-y: -168px; }
+
+.jap-flag {
+  background-position-y: -192px; }
+
+.kor-flag {
+  background-position-y: -216px; }
