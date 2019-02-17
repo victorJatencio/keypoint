@@ -1,0 +1,18 @@
+// Widescreens
+@include mediaXl {
+  .container {
+    width: 1170px;
+  }
+}
+
+// Desktop & Laptops
+@include mediaLg {
+}
+
+// Tablets & Small Laptop
+@include mediaMd {
+}
+
+// Smartphones
+@include mediaSm {
+}

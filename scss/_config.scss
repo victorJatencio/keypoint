@@ -1,0 +1,77 @@
+/* Default Colors for body, form fields etc*/
+$body-color: #f2f2f2;
+$light-grey: #e2e2e2;
+$off-white: #f5f5f5;
+
+/* Primary colors */
+$main-layout-color: #0077c8;
+$light-orange: #ffb547;
+$strong-orange: #ff671b;
+
+/* Mostly used for text */
+$dark-grey: #55565a;
+$dark-blue: #000d29;
+$secondary-blue: #0d3c7c;
+
+/* Error message, Success and Enable/Disabled colors*/
+$error-color: #f94d4d;
+$success-message: #50e3c2;
+$disabled-light-grey: #bdbdbd;
+$disabled-dark-grey: #474747;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Media Query Mixins */
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1201px) {
+    @content;
+  }
+}

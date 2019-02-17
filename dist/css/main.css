@@ -1,2 +1,88 @@
+/* Default Colors for body, form fields etc*/
+/* Primary colors */
+/* Mostly used for text */
+/* Error message, Success and Enable/Disabled colors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* Media Query Mixins */
+@media screen and (min-width: 1201px) {
+  .container {
+    width: 1170px; } }
+
 body {
-  background: #444; }
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #55565a; }
+
+/* Nav styles */
+.util-nav {
+  background-color: #0077c8;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase; }
+  .util-nav .container {
+    margin-left: auto;
+    margin-right: auto; }
+    .util-nav .container .util-nav-content {
+      display: flex;
+      justify-content: flex-end; }
+      .util-nav .container .util-nav-content .util-nav-list {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center; }
+        .util-nav .container .util-nav-content .util-nav-list li {
+          display: inline-block; }
+        .util-nav .container .util-nav-content .util-nav-list li a {
+          color: #fff;
+          padding: 10px 10px;
+          display: inherit; }
+          .util-nav .container .util-nav-content .util-nav-list li a .fa {
+            padding: 0 4px; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #0077c8;
+    width: 210px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    margin-top: -4px;
+    display: none; }
+    .dropdown .dropdown-menu li a:hover {
+      background-color: #0033a0;
+      border-radius: 2px; }
+    .dropdown .dropdown-menu.show-dropdown {
+      display: flex;
+      flex-flow: column nowrap; }

@@ -5,10 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Keypoint Intelligence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <!-- <script src="main.js"></script> -->
   </head>
   <body>
-    <h1>Hey</h1>
+    <header class="header">
+      <nav class="util-nav">
+        <div class="container">
+          <!-- asign layout width-->
+          <div class="util-nav-content">
+            <ul class="util-nav-list">
+              <li class="dropdown">
+                <a href="#">
+                  <span>United States</span>
+                  <i class="fa fa-angle-down direction-icon"></i>
+                </a>
+                <ul class="dropdown-menu flags">
+                  <li>
+                    <a href="#"><span>Hong Kong</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Singapore</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Australia</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>United Kingdom</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>United States</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>France</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Germany</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Italy</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Japan</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Korea</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-lock icon" style="font-size: 16px;"></i>
+                  bliq demo
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#">
+                  <i class="fas fa-user-circle" style="font-size: 16px;"></i>
+                  sign in
+                  <i class="fa fa-angle-down direction-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" target="_blank">bliQ</a></li>
+                  <li><a href="#" target="_blank">InfoTrends</a></li>
+                </ul>
+              </li>
+              <li>
+                <form action="/search" class="search-form">
+                  <input type="search" name="searchtext" placeholder="search" />
+                  <i class="fa fa-search icon" style="font-size: 16px;"></i>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
