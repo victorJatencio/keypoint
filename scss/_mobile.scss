@@ -1,18 +1,53 @@
 // Widescreens
 @include mediaXl {
   .container {
-    width: 1170px;
+    width: 1170px !important;
   }
 }
 
 // Desktop & Laptops
 @include mediaLg {
+  .container {
+    width: 970px !important;
+  }
+  .util-nav .container .util-nav-content .util-nav-list {
+    margin: 0 15px;
+  }
 }
 
 // Tablets & Small Laptop
 @include mediaMd {
+  .container {
+    width: 750px;
+  }
 }
 
 // Smartphones
 @include mediaSm {
+  .container {
+    width: 100%;
+  }
+  #user-signin {
+    display: none;
+  }
+  .util-nav-content {
+    i.fa-user-friends,
+    i.fa-user-circle,
+    ul.util-nav-list > .dropdown > a > span.flag-icon {
+      display: none;
+    }
+  }
+
+  .util-nav .container .util-nav-content {
+    justify-content: center !important;
+  }
+
+  .util-nav .container .util-nav-content .util-nav-list li a {
+    padding: 10px 14px;
+  }
+
+  .util-nav .container .util-nav-content .util-nav-list {
+    justify-content: flex-end;
+    width: 90%;
+  }
 }

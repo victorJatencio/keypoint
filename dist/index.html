@@ -106,7 +106,7 @@
                   bliq demo
                 </a>
               </li>
-              <li class="dropdown">
+              <li id="user-signin" class="dropdown">
                 <a href="#">
                   <i class="fas fa-user-circle" style="font-size: 16px;"></i>
                   sign in
@@ -118,10 +118,11 @@
                 </ul>
               </li>
               <li>
-                <form action="/search" class="search-form">
-                  <input type="search" name="searchtext" placeholder="search" />
-                  <i class="fa fa-search icon" style="font-size: 16px;"></i>
-                </form>
+                <div class="search-wrap">
+                  <button id="btn-search" class="btn btn--search">
+                    <i class="fa fa-search icon"></i>
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -130,17 +131,20 @@
     </header>
 
     <main>
-      <div class="search">
+      <div id="overlay-form" class="top-search-wrapper">
+        <!-- X close button -->
         <button
-          id="btn-search-close"
+          id="top-search-close"
           class="btn btn--search-close"
           aria-label="Close search form"
         >
           <i class="fas fa-times"></i>
         </button>
+
+        <!-- Search form input -->
         <form class="search__form" action="">
           <input
-            class="search__input"
+            class="top__search__input"
             name="search"
             type="search"
             placeholder="Search"
@@ -152,32 +156,29 @@
           <span class="search__info">Hit enter to search or ESC to close</span>
         </form>
 
+        <!-- search__related -->
         <div class="search__related">
           <div class="search__suggestion">
-            <h3>May We Suggest?</h3>
+            <h3>About the Industry</h3>
             <p>
-              #drone #funny #catgif #broken #lost #hilarious #good #red #blue
-              #nono #why #yes #yesyes #aliens #green
+              #Brother #Canon #Lexmark #Toshiba #Xerox #Sharp #Epson #HP
+              #Kyocera #Alaris
             </p>
           </div>
           <div class="search__suggestion">
-            <h3>Is It This?</h3>
+            <h3>Products</h3>
             <p>
-              #good #red #hilarious #blue #nono #why #yes #yesyes #aliens #green
-              #drone #funny #catgif #broken #lost
+              #bliQ #TCO #bliQmobile #Compare #Seals #Awards #Articles
             </p>
           </div>
           <div class="search__suggestion">
-            <h3>Needle, Where Art Thou?</h3>
+            <h3>Services</h3>
             <p>
-              #broken #lost #good #red #funny #hilarious #catgif #blue #nono
-              #why #yes #yesyes #aliens #green #drone
+              #bliQ #TCO #bliQmobile #Compare #Seals #Awards #Articles
             </p>
           </div>
         </div>
-        <!-- search__related -->
       </div>
-      <!-- search -->
     </main>
 
     <script src="js/main.js"></script>
