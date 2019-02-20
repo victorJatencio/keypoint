@@ -20,6 +20,63 @@
   .container {
     width: 750px;
   }
+
+  // Main Nav Styles
+  .menu_bar {
+    display: block !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+
+    .bt-menu {
+      display: block;
+      padding: 20px;
+      color: $dark-blue;
+      overflow: hidden;
+      font-size: 18px;
+
+      span {
+        float: right;
+      }
+    }
+  }
+
+  header nav.main-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    margin: 0;
+    overflow: scroll;
+
+    ul li {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $light-grey;
+
+      a {
+        display: block;
+      }
+
+      .sub-children {
+        width: 100%;
+        position: relative;
+      }
+
+      .caret {
+        float: right;
+      }
+
+      &:hover .sub-children {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-nav ul li .sub-children a {
+  margin-left: 20px;
 }
 
 // Smartphones

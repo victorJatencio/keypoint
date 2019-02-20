@@ -159,6 +159,35 @@ a.flag-position {
           color: $main-layout-color;
         }
       }
+
+      .caret {
+        position: relative;
+        margin-left: 10px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.main-nav ul li:hover .sub-children {
+  display: block;
+}
+
+.main-nav ul li .sub-children {
+  display: none;
+  background: #fff;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+
+  li {
+    display: block;
+    &:hover {
+      background: $off-white;
+    }
+
+    a {
+      display: block;
     }
   }
 }
