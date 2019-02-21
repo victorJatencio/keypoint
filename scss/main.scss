@@ -156,7 +156,7 @@ a.flag-position {
     margin-left: auto;
 
     li {
-      display: inline-block;
+      display: flex;
       position: relative;
 
       a {
@@ -164,8 +164,9 @@ a.flag-position {
         font-size: 0.875em;
         font-weight: 400;
         color: $dark-grey;
-        padding: 20px 20px 20px 10px;
+        padding: 20px 20px 10px 10px;
         transition: color 0.3s ease-in;
+        align-self: flex-end;
 
         &:hover {
           color: $main-layout-color;
@@ -194,11 +195,12 @@ a.flag-position {
   display: none;
   background: #fff;
   position: absolute;
-  width: 150%;
+  width: 170%;
   z-index: 1000;
   border-radius: 2px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid $main-layout-color;
+  top: 100%;
 
   li {
     display: block;
@@ -212,3 +214,22 @@ a.flag-position {
     }
   }
 }
+
+.submenu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0 !important;
+  background: $main-layout-color;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu:hover {
+  &::after {
+    width: 100% !important;
+  }
+}
+
+/* Hero Styles */

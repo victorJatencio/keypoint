@@ -362,15 +362,16 @@ a.flag-position {
     align-content: flex-end;
     margin-left: auto; }
     .main-nav ul li {
-      display: inline-block;
+      display: flex;
       position: relative; }
       .main-nav ul li a {
         display: block;
         font-size: 0.875em;
         font-weight: 400;
         color: #55565a;
-        padding: 20px 20px 20px 10px;
-        transition: color 0.3s ease-in; }
+        padding: 20px 20px 10px 10px;
+        transition: color 0.3s ease-in;
+        align-self: flex-end; }
         .main-nav ul li a:hover {
           color: #0077c8; }
         .main-nav ul li a.active {
@@ -388,11 +389,12 @@ a.flag-position {
   display: none;
   background: #fff;
   position: absolute;
-  width: 150%;
+  width: 170%;
   z-index: 1000;
   border-radius: 2px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #0077c8; }
+  border-bottom: 2px solid #0077c8;
+  top: 100%; }
   .main-nav ul li .sub-children li {
     display: block; }
     .main-nav ul li .sub-children li:hover {
@@ -400,3 +402,18 @@ a.flag-position {
     .main-nav ul li .sub-children li a {
       display: block;
       padding: 10px; }
+
+.submenu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0 !important;
+  background: #0077c8;
+  bottom: 0;
+  transition: all 0.3s ease-in-out; }
+
+.submenu:hover::after {
+  width: 100% !important; }
+
+/* Hero Styles */
