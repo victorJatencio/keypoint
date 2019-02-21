@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: $dark-grey;
+  overflow: hidden;
 }
 
 /* Utility Nav Styles */
@@ -19,12 +20,15 @@ body {
   text-transform: uppercase;
 
   .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 15px !important;
 
     .util-nav-content {
       display: flex;
       justify-content: flex-end;
+      margin-left: auto;
+      width: 100%;
 
       .util-nav-list {
         display: flex;
@@ -56,13 +60,19 @@ body {
   }
 }
 
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 /* Utility Nav Dropdown */
 .dropdown {
   position: relative;
   .dropdown-menu {
     position: absolute;
     background-color: $main-layout-color;
-    width: 100%;
+    width: 120%;
     display: flex;
     flex-flow: column nowrap;
     border-radius: 2px;
@@ -125,6 +135,10 @@ a.flag-position {
 }
 
 /* Main Nav Styles */
+.kpi-logo a img {
+  width: 222px;
+  vertical-align: middle;
+}
 .menu_bar {
   display: none;
 }
@@ -138,7 +152,9 @@ a.flag-position {
   ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: auto;
+
     li {
       display: inline-block;
       position: relative;
@@ -148,7 +164,7 @@ a.flag-position {
         font-size: 0.875em;
         font-weight: 400;
         color: $dark-grey;
-        padding: 20px;
+        padding: 20px 20px 20px 10px;
         transition: color 0.3s ease-in;
 
         &:hover {
@@ -164,6 +180,7 @@ a.flag-position {
         position: relative;
         margin-left: 10px;
         margin-right: 0;
+        display: none;
       }
     }
   }
@@ -179,6 +196,9 @@ a.flag-position {
   position: absolute;
   width: 150%;
   z-index: 1000;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid $main-layout-color;
 
   li {
     display: block;
@@ -188,6 +208,7 @@ a.flag-position {
 
     a {
       display: block;
+      padding: 10px;
     }
   }
 }

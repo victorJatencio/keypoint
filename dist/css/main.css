@@ -47,40 +47,39 @@ button {
     border: none; }
 
 /* Media Query Mixins */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .container {
-    width: 1170px !important; } }
+    max-width: 1170px;
+    width: 100%; } }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    width: 970px !important; }
-  .util-nav .container .util-nav-content .util-nav-list {
-    margin: 0 15px; } }
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+  .main-nav ul li.submenu:last-child > ul {
+    right: 0;
+    margin-right: 5px !important; } }
 
-@media screen and (min-width: 750px) and (max-width: 991px) {
-  .container {
-    width: 750px; }
+@media screen and (max-width: 850px) {
   .menu_bar {
-    display: block !important;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background: #fff; }
+    display: flex !important;
+    margin-left: auto; }
     .menu_bar .bt-menu {
       display: block;
-      padding: 20px;
+      padding: 20px 0;
       color: #000d29;
       overflow: hidden;
       font-size: 18px; }
       .menu_bar .bt-menu span {
         float: right; }
   header nav.main-nav {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    margin: 0;
-    overflow: scroll; }
+    padding: 0 15px; }
+    header nav.main-nav ul {
+      top: 113px;
+      display: block;
+      position: inherit;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background: #fff;
+      overflow: none; }
     header nav.main-nav ul li {
       display: block;
       width: 100%;
@@ -89,18 +88,29 @@ button {
         display: block; }
       header nav.main-nav ul li .sub-children {
         width: 100%;
-        position: relative; }
+        position: relative;
+        box-shadow: none;
+        border-bottom: none;
+        top: 0; }
+        header nav.main-nav ul li .sub-children li {
+          border-bottom: none; }
       header nav.main-nav ul li .caret {
         float: right; }
       header nav.main-nav ul li:hover .sub-children {
-        display: none; } }
+        display: none; }
+      header nav.main-nav ul li.sub-active {
+        border-bottom: 1px solid #0077c8; }
+  .main-nav ul li .sub-children a {
+    margin-left: 1.5em;
+    padding: 10px; }
+  .main-nav ul li .caret {
+    display: block !important; } }
 
-.main-nav ul li .sub-children a {
-  margin-left: 20px; }
-
-@media screen and (min-width: 320px) and (max-width: 749px) {
+@media screen and (max-width: 600px) {
   .container {
     width: 100%; }
+  .dropdown-menu {
+    width: 150% !important; }
   #user-signin {
     display: none; }
   .util-nav-content i.fa-user-friends,
@@ -113,7 +123,11 @@ button {
     padding: 10px 14px; }
   .util-nav .container .util-nav-content .util-nav-list {
     justify-content: flex-end;
-    width: 90%; } }
+    width: 100%; }
+  .main-nav {
+    padding: 0 15px; }
+    .main-nav ul li .caret {
+      display: block !important; } }
 
 /* Search button styles */
 #overlay-form {
@@ -230,7 +244,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #55565a; }
+  color: #55565a;
+  overflow: hidden; }
 
 /* Utility Nav Styles */
 .util-nav {
@@ -239,11 +254,14 @@ body {
   font-size: 12px;
   text-transform: uppercase; }
   .util-nav .container {
-    margin-left: auto;
-    margin-right: auto; }
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 15px !important; }
     .util-nav .container .util-nav-content {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      margin-left: auto;
+      width: 100%; }
       .util-nav .container .util-nav-content .util-nav-list {
         display: flex;
         flex-flow: row nowrap;
@@ -261,13 +279,18 @@ body {
         .util-nav .container .util-nav-content .util-nav-list .dropdown:hover .dropdown-menu li {
           display: block; }
 
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap; }
+
 /* Utility Nav Dropdown */
 .dropdown {
   position: relative; }
   .dropdown .dropdown-menu {
     position: absolute;
     background-color: #0077c8;
-    width: 100%;
+    width: 120%;
     display: flex;
     flex-flow: column nowrap;
     border-radius: 2px;
@@ -320,6 +343,10 @@ a.flag-position {
   background-position-y: -216px; }
 
 /* Main Nav Styles */
+.kpi-logo a img {
+  width: 222px;
+  vertical-align: middle; }
+
 .menu_bar {
   display: none; }
 
@@ -332,7 +359,8 @@ a.flag-position {
   .main-nav ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end; }
+    align-content: flex-end;
+    margin-left: auto; }
     .main-nav ul li {
       display: inline-block;
       position: relative; }
@@ -341,7 +369,7 @@ a.flag-position {
         font-size: 0.875em;
         font-weight: 400;
         color: #55565a;
-        padding: 20px;
+        padding: 20px 20px 20px 10px;
         transition: color 0.3s ease-in; }
         .main-nav ul li a:hover {
           color: #0077c8; }
@@ -350,7 +378,8 @@ a.flag-position {
       .main-nav ul li .caret {
         position: relative;
         margin-left: 10px;
-        margin-right: 0; }
+        margin-right: 0;
+        display: none; }
 
 .main-nav ul li:hover .sub-children {
   display: block; }
@@ -360,10 +389,14 @@ a.flag-position {
   background: #fff;
   position: absolute;
   width: 150%;
-  z-index: 1000; }
+  z-index: 1000;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #0077c8; }
   .main-nav ul li .sub-children li {
     display: block; }
     .main-nav ul li .sub-children li:hover {
       background: #f5f5f5; }
     .main-nav ul li .sub-children li a {
-      display: block; }
+      display: block;
+      padding: 10px; }
