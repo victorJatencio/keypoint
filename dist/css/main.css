@@ -70,16 +70,16 @@ button {
       .menu_bar .bt-menu span {
         float: right; }
   header nav.main-nav {
-    padding: 0 15px; }
+    padding: 0 15px;
+    position: fixed;
+    overflow: hidden; }
     header nav.main-nav ul {
       top: 113px;
-      display: block;
-      position: inherit;
       width: 100%;
       height: 100%;
       left: 0;
       background: #fff;
-      overflow: none; }
+      overflow: hidden; }
     header nav.main-nav ul li {
       display: block;
       width: 100%;
