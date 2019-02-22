@@ -79,7 +79,10 @@ button {
       height: 100%;
       left: 0;
       background: #fff;
-      overflow: hidden; }
+      overflow: hidden;
+      display: none; }
+      header nav.main-nav ul.open-menu {
+        display: block; }
     header nav.main-nav ul li {
       display: block;
       width: 100%;
@@ -91,7 +94,8 @@ button {
         position: relative;
         box-shadow: none;
         border-bottom: none;
-        top: 0; }
+        top: 0;
+        display: block; }
         header nav.main-nav ul li .sub-children li {
           border-bottom: none; }
       header nav.main-nav ul li .caret {

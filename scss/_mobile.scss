@@ -41,13 +41,16 @@
 
     ul {
       top: 113px;
-      // display: none;
-      // position: inherit;
       width: 100%;
       height: 100%;
       left: 0;
       background: #fff;
       overflow: hidden;
+      display: none;
+
+      &.open-menu {
+        display: block;
+      }
     }
     ul li {
       display: block;
@@ -64,6 +67,7 @@
         box-shadow: none;
         border-bottom: none;
         top: 0;
+        display: block;
 
         li {
           border-bottom: none;
