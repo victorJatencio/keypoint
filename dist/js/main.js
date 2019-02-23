@@ -9,7 +9,7 @@ function main() {
   // Show and Hide Submenus
   $(".submenu").click(function() {
     $(this)
-      .children()
-      .toggleClass("sub-childen");
+      .children(".sub-children")
+      .slideToggle();
   });
 }

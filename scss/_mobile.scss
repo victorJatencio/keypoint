@@ -12,6 +12,9 @@
     right: 0;
     margin-right: 5px !important;
   }
+  .main-nav ul li:hover ul {
+    display: block !important;
+  }
 }
 
 // Tablets & Small Laptop
@@ -67,7 +70,6 @@
         box-shadow: none;
         border-bottom: none;
         top: 0;
-        display: block;
 
         li {
           border-bottom: none;

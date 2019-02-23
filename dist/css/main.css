@@ -55,7 +55,9 @@ button {
 @media screen and (min-width: 851px) and (max-width: 1200px) {
   .main-nav ul li.submenu:last-child > ul {
     right: 0;
-    margin-right: 5px !important; } }
+    margin-right: 5px !important; }
+  .main-nav ul li:hover ul {
+    display: block !important; } }
 
 @media screen and (max-width: 850px) {
   .menu_bar {
@@ -94,8 +96,7 @@ button {
         position: relative;
         box-shadow: none;
         border-bottom: none;
-        top: 0;
-        display: block; }
+        top: 0; }
         header nav.main-nav ul li .sub-children li {
           border-bottom: none; }
       header nav.main-nav ul li .caret {
@@ -386,10 +387,10 @@ a.flag-position {
         margin-right: 0;
         display: none; }
 
-.main-nav ul li:hover .sub-children {
+.main-nav ul li:hover ul {
   display: block; }
 
-.main-nav ul li .sub-children {
+.main-nav ul li ul {
   display: none;
   background: #fff;
   position: absolute;
@@ -399,11 +400,11 @@ a.flag-position {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid #0077c8;
   top: 100%; }
-  .main-nav ul li .sub-children li {
+  .main-nav ul li ul li {
     display: block; }
-    .main-nav ul li .sub-children li:hover {
+    .main-nav ul li ul li:hover {
       background: #f5f5f5; }
-    .main-nav ul li .sub-children li a {
+    .main-nav ul li ul li a {
       display: block;
       padding: 10px; }
 

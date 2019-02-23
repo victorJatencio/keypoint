@@ -187,11 +187,11 @@ a.flag-position {
   }
 }
 
-.main-nav ul li:hover .sub-children {
+.main-nav ul li:hover ul {
   display: block;
 }
 
-.main-nav ul li .sub-children {
+.main-nav ul li ul {
   display: none;
   background: #fff;
   position: absolute;
