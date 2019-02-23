@@ -96,6 +96,17 @@
   .main-nav ul li .caret {
     display: block !important;
   }
+
+  // Jumbotron
+  .jumbo--content {
+    padding: 0 !important;
+    h1 {
+      font-size: 2.8em !important;
+    }
+    p {
+      font-size: 1.5em !important;
+    }
+  }
 }
 
 // Smartphones

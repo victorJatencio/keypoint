@@ -9,7 +9,7 @@
       content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
       rel="stylesheet"
     />
     <link
@@ -225,7 +225,113 @@
     </header>
 
     <main role="main">
-      <div class="hero jumbotron_section"></div>
+      <div class="hero jumbotron_section">
+        <div class="container jumbo--content">
+          <h1>We turn data into intelligence.</h1>
+          <p>
+            Keypoint Intelligence cuts through the noise of data to offer you
+            unbiased insights and responsive tools
+          </p>
+        </div>
+      </div>
+      <!-- End Hero -->
+
+      <div class="select select_widget">
+        <p>Explore the right solution for you</p>
+
+        <select class="industry" required>
+          <option value="">Select Your Industry</option>
+          <option value="graphic arts">Graphic Arts</option>
+          <option value="sign & display">Sign & Display</option>
+          <option value="print on demand">Print On Demand</option>
+          <option value="decorative printing">Decorative Printing</option>
+          <option value="packaging">Packaging</option>
+          <option value="photo hardware & software"
+            >Photo Hardware & Software</option
+          >
+          <option value="photo printing & products"
+            >Photo Printing & Products</option
+          >
+          <option value="virtual & augmented reality"
+            >Virtual & Augmented Reality</option
+          >
+          <option value="professional photography"
+            >Professional Photography</option
+          >
+          <option value="office supplies">Office Supplies</option>
+          <option value="office hardware">Office Hardware</option>
+          <option value="managed services">Managed Services</option>
+          <option value="network & document management"
+            >Network & Document Management</option
+          >
+          <option value="vertical focused industries"
+            >Vertical Focused Industries</option
+          > </select
+        ><!-- Industry -->
+        <span>OR</span>
+        <select class="role" required>
+          <option value="">Select Your Role</option>
+          <option value="print services provider"
+            >Print Services Provider</option
+          >
+          <option value="service provider">Service Provider</option>
+          <option value="in-plant">In-plant</option>
+          <option value="equipment vendor">Equipment Vendor</option>
+          <option value="software vendor">Software Vendor</option>
+          <option value="suppliers dealers">Suppliers/Dealers</option>
+          <option value="retailers">Retailers</option>
+          <option value="oem">OEM</option>
+          <option value="commercial printer">Commercial Printer</option>
+          <option value="technology provider">Technology Provider</option>
+          <option value="sales">Sales</option>
+          <option value="product management">Product Management</option>
+          <option value="marketing">Marketing</option>
+          <option value="market research">Market Research</option>
+          <option value="product planning">Product Planning</option> </select
+        ><!--Role-->
+        <form action="/search" class="search-box">
+          <input class="search__widget" type="search" name="searchtext" />
+          <i class="fa fa-search icon"></i>
+        </form>
+      </div>
+      <!-- Select Widget -->
+
+      <div class="cards cards__section">
+        <div class="container">
+          <div class="card__wrappers">
+            <div class="card--item">
+              <h2>
+                <strong>Free Webinar:</strong>Being a Data Driven Dealership
+              </h2>
+              <div class="card__caption">
+                <p>
+                  Learn how to use data marketing & analytics to drive strategic
+                  revenue growth in this free webinar November 16
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="card--item">
+              <h2>Outstanding Copier MFPs Earn BLI Pick Awards</h2>
+              <div class="card__caption">
+                <p>See who took home awards</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="card--item">
+              <h2>Gen Z to Boomers Study Now Available</h2>
+              <div class="card__caption">
+                <p>
+                  Learn how to increase share of wallet with key demographic
+                  groups for imaging-related products and services
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Overlay Search -->
       <div id="overlay-form" class="top-search-wrapper">
         <!-- X close button -->

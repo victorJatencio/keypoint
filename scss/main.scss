@@ -236,8 +236,126 @@ a.flag-position {
 .hero {
   width: 100%;
   height: 564px;
-  background: #ddd;
   display: block;
   position: relative;
   z-index: -1;
+  padding: 1.5em;
+  background: url(../images/home-video-web.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($dark-blue, 0.5);
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+
+  .jumbo--content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+    padding: 0 5em;
+
+    h1 {
+      font-size: 3.5em;
+      color: $light-orange;
+    }
+
+    p {
+      font-size: 1.8em;
+      font-weight: 300;
+      color: #fff;
+      margin: 0.5em 0;
+    }
+  }
+}
+
+.select {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  width: 70%;
+  padding: 1.5em;
+  box-shadow: 0 10px 40px rgba($color: #000000, $alpha: 0.3);
+  border-radius: 3px;
+  margin: -35px auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  p {
+    font-weight: normal;
+    order: 1;
+    width: 100%;
+  }
+
+  select {
+    width: 35%;
+    height: 4em;
+    margin: 20px 0 10px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    padding: 5px 5px 5px 15px;
+    border-width: 0;
+    border-bottom: 2px solid $main-layout-color;
+    font-size: 0.9em;
+    color: #888;
+    -ms-word-break: normal;
+    word-break: normal;
+
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1.7em + 2px),
+      calc(100% - 15px) calc(1.7em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 0 1.5em;
+    background-repeat: no-repeat;
+    background-color: $off-white;
+  }
+
+  select.industry {
+    order: 2;
+  }
+  select.role {
+    order: 4;
+  }
+
+  span {
+    order: 3;
+    align-self: center;
+  }
+
+  form {
+    order: 5;
+    width: 100%;
+
+    input.search__widget {
+      width: 84%;
+      margin-top: 10px;
+      font-size: 1.5em;
+      color: $dark-grey;
+      border-width: 0;
+      border-bottom: 1px solid $main-layout-color;
+      -webkit-appearance: textfield;
+    }
+  }
+}
+
+/* Three cards */
+.cards {
+  margin-top: 50px;
 }
