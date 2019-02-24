@@ -529,3 +529,29 @@ a.flag-position {
 /* Three cards */
 .cards {
   margin-top: 50px; }
+
+.card__wrappers {
+  display: flex;
+  flex-flow: row wrap; }
+  .card__wrappers .card--item {
+    flex: 1;
+    margin: 0 27px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .card__wrappers .card--item h2 {
+      color: #fff;
+      font-size: 1.6em;
+      font-weight: normal;
+      padding: 2em 0.5em 6em 0.5em; }
+    .card__wrappers .card--item.item-01 {
+      background: url(../images/image-01.png);
+      background-position: center; }
+    .card__wrappers .card--item.item-02 {
+      background: url(../images/image-02.jpg); }
+    .card__wrappers .card--item.item-03 {
+      background: url(../images/image-03.jpg);
+      background-position: 0 180%; }
+    .card__wrappers .card--item .card__caption {
+      background: #fff;
+      padding: 15px; }

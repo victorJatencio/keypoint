@@ -359,3 +359,41 @@ a.flag-position {
 .cards {
   margin-top: 50px;
 }
+
+.card__wrappers {
+  display: flex;
+  flex-flow: row wrap;
+
+  .card--item {
+    flex: 1;
+    margin: 0 27px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+      color: #fff;
+      font-size: 1.6em;
+      font-weight: normal;
+      padding: 2em 0.5em 6em 0.5em;
+    }
+
+    &.item-01 {
+      background: url(../images/image-01.png);
+      background-position: center;
+    }
+    &.item-02 {
+      background: url(../images/image-02.jpg);
+    }
+    &.item-03 {
+      background: url(../images/image-03.jpg);
+      background-position: 0 180%;
+    }
+
+    .card__caption {
+      background: #fff;
+      padding: 15px;
+      // height: 100%;
+    }
+  }
+}
