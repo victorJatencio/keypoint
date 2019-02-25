@@ -1,20 +1,9 @@
 // Widescreens
 @include mediaXl {
-  .container {
-    max-width: 1170px;
-    width: 100%;
-  }
 }
 
 // Desktop & Laptops
 @include mediaLg {
-  .main-nav ul li.submenu:last-child > ul {
-    right: 0;
-    margin-right: 5px !important;
-  }
-  .main-nav ul li:hover ul {
-    display: block !important;
-  }
 }
 
 // Tablets & Small Laptop
@@ -88,8 +77,18 @@
         border-bottom: 1px solid $main-layout-color;
       }
     }
+
+    .main-nav ul li:hover ul {
+      display: none;
+    }
   }
+  .main-nav ul li.submenu:last-child > ul {
+    right: 0;
+    margin-right: 5px;
+  }
+
   .main-nav ul li .sub-children a {
+    // push the about us menu away from right window edge
     margin-left: 1.5em;
     padding: 10px;
   }
@@ -105,6 +104,17 @@
     }
     p {
       font-size: 1.5em !important;
+    }
+  }
+
+  // Three cards
+  .card__wrappers {
+    flex-direction: column;
+    align-items: center;
+
+    .card--item {
+      width: 80%;
+      margin: 20px 0;
     }
   }
 }
@@ -148,5 +158,10 @@
     ul li .caret {
       display: block !important;
     }
+  }
+
+  // Three cards
+  .card__wrappers .card--item {
+    width: 100%;
   }
 }

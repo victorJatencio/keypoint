@@ -15,11 +15,14 @@ $(document).ready(function() {
       let screenSize = $screen.width();
 
       // Optimize for screen sizes
-      if (screenSize >= 320 && screenSize <= 850) {
+      if (screenSize >= 320 && screenSize <= 880) {
         $(this)
           .children(".sub-children")
           .slideToggle();
-      } else if (screenSize >= 851) {
+      } else if (screenSize >= 881) {
+        // $(".main-nav ul li").hover(function() {
+        //   $(this).css({ display: "block" });
+        // });
         return false;
       }
     });
