@@ -117,6 +117,18 @@
       margin: 20px 0;
     }
   }
+
+  // Blog & News
+  .blog-news .blog-news-blocks,
+  .blog-news .news-block {
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .blog-news .blog-news-blocks p {
+    margin: 4em 0;
+  }
 }
 
 // Smartphones
@@ -163,5 +175,10 @@
   // Three cards
   .card__wrappers .card--item {
     width: 100%;
+  }
+
+  // Blogs & News
+  .blog-news .blog-news-blocks a {
+    width: 60%;
   }
 }

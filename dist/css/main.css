@@ -502,11 +502,11 @@ a.flag-position {
       margin-bottom: 1em; }
   .blog-news .blog-news-blocks {
     display: flex;
-    flex-flow: row wrap;
-    height: 537px;
+    justify-content: center;
     text-align: center;
     color: #fff;
-    position: relative; }
+    position: relative;
+    height: 537px; }
     .blog-news .blog-news-blocks::before {
       content: "";
       position: absolute;
@@ -517,17 +517,23 @@ a.flag-position {
       top: 0;
       left: 0; }
     .blog-news .blog-news-blocks .blog-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 100%;
-      flex: 1;
       padding: 1.5em;
+      padding-bottom: 6em;
       background-image: url(../images/blog.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
     .blog-news .blog-news-blocks .news-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 100%;
-      flex: 1;
       padding: 1.5em;
+      padding-bottom: 6em;
       background-image: url(../images/news.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -537,9 +543,17 @@ a.flag-position {
       font-weight: 300;
       color: #ffb547;
       position: relative; }
+      .blog-news .blog-news-blocks h2::before {
+        content: "";
+        width: 4em;
+        padding: 1px;
+        display: block;
+        position: relative;
+        top: 1.8em;
+        margin: 0 auto;
+        background-color: #ffb547; }
     .blog-news .blog-news-blocks p {
       font-size: 1em;
-      margin: 5em;
       position: relative; }
     .blog-news .blog-news-blocks a {
       font-size: 1em;
@@ -631,7 +645,14 @@ a.flag-position {
     align-items: center; }
     .card__wrappers .card--item {
       width: 80%;
-      margin: 20px 0; } }
+      margin: 20px 0; }
+  .blog-news .blog-news-blocks,
+  .blog-news .news-block {
+    display: block;
+    overflow: hidden;
+    height: auto; }
+  .blog-news .blog-news-blocks p {
+    margin: 4em 0; } }
 
 @media screen and (max-width: 600px) {
   .container {
@@ -656,4 +677,6 @@ a.flag-position {
     .main-nav ul li .caret {
       display: block !important; }
   .card__wrappers .card--item {
-    width: 100%; } }
+    width: 100%; }
+  .blog-news .blog-news-blocks a {
+    width: 60%; } }

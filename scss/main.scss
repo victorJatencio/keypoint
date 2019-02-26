@@ -466,11 +466,11 @@ a.flag-position {
 
   .blog-news-blocks {
     display: flex;
-    flex-flow: row wrap;
-    height: 537px;
+    justify-content: center;
     text-align: center;
     color: #fff;
     position: relative;
+    height: 537px;
 
     &::before {
       content: "";
@@ -484,18 +484,24 @@ a.flag-position {
     }
 
     .blog-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 100%;
-      flex: 1;
       padding: 1.5em;
+      padding-bottom: 6em;
       background-image: url(../images/blog.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     .news-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 100%;
-      flex: 1;
       padding: 1.5em;
+      padding-bottom: 6em;
       background-image: url(../images/news.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -507,11 +513,21 @@ a.flag-position {
       font-weight: 300;
       color: $light-orange;
       position: relative;
+
+      &::before {
+        content: "";
+        width: 4em;
+        padding: 1px;
+        display: block;
+        position: relative;
+        top: 1.8em;
+        margin: 0 auto;
+        background-color: $light-orange;
+      }
     }
 
     p {
       font-size: 1em;
-      margin: 5em;
       position: relative;
     }
 
