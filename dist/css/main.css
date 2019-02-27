@@ -21,6 +21,9 @@ ul li {
 a {
   text-decoration: none; }
 
+p {
+  text-rendering: optimizeLegibility; }
+
 *:focus {
   outline: none; }
 
@@ -626,6 +629,71 @@ a.flag-position {
         font-weight: 300; }
     .single-search form.search-body i {
       font-size: 1.5em; }
+
+.footer-container {
+  background: url(../images/map-image.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+  background-attachment: fixed; }
+  .footer-container .main-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .footer-container .main-footer .links-section {
+      color: #000d29;
+      text-transform: uppercase;
+      width: 25%;
+      margin-top: 2em;
+      padding: 0 15px; }
+      .footer-container .main-footer .links-section h3 {
+        font-size: 0.9em; }
+      .footer-container .main-footer .links-section p {
+        font-size: 14px; }
+      .footer-container .main-footer .links-section a {
+        color: #000d29;
+        font-size: 14px; }
+      .footer-container .main-footer .links-section button.sign-up {
+        border: 1px solid #0077c8;
+        padding: 1em;
+        width: 100%;
+        border-radius: 3px;
+        margin-top: 1em; }
+        .footer-container .main-footer .links-section button.sign-up a {
+          text-transform: uppercase;
+          color: #0077c8;
+          font-size: 1em; }
+    .footer-container .main-footer ul.apps-section ul.app-links {
+      display: flex;
+      flex-flow: row wrap; }
+      .footer-container .main-footer ul.apps-section ul.app-links li {
+        margin-right: 10px; }
+        .footer-container .main-footer ul.apps-section ul.app-links li img {
+          width: 115px; }
+
+.small-footer {
+  background: #000d29; }
+
+.small-items {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between; }
+  .small-items .small-col {
+    color: #fff;
+    font-weight: 300;
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: middle;
+    position: relative;
+    margin: auto; }
+    .small-items .small-col a {
+      color: #fff;
+      font-size: 2em;
+      padding-right: 10px; }
+    .small-items .small-col .small--social {
+      display: flex; }
 
 @media screen and (max-width: 880px) {
   .menu_bar {
