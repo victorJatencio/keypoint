@@ -129,6 +129,19 @@
   .blog-news .blog-news-blocks p {
     margin: 4em 0;
   }
+
+  // Standalone Search
+  .single-search form.search-body {
+    display: flex;
+    align-items: center;
+  }
+  .single-search form.search-body i {
+    font-size: 1.2em;
+  }
+  .single-search form.search-body input.search__widget {
+    margin: 5px;
+    font-size: 1.2em;
+  }
 }
 
 // Smartphones
