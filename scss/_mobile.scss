@@ -107,6 +107,13 @@
     }
   }
 
+  // Select Widget
+  .select {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
   // Three cards
   .card__wrappers {
     flex-direction: column;
@@ -141,6 +148,15 @@
   .single-search form.search-body input.search__widget {
     margin: 5px;
     font-size: 1.2em;
+  }
+
+  // Footer
+  .footer-container {
+    background-position: center;
+    background-size: contain;
+  }
+  .footer-container .main-footer .links-section {
+    width: 50%;
   }
 }
 
@@ -185,6 +201,18 @@
     }
   }
 
+  // Select Widget
+  .select {
+    flex-direction: column;
+
+    select {
+      width: 100%;
+    }
+    form input.search__widget {
+      width: 90%;
+    }
+  }
+
   // Three cards
   .card__wrappers .card--item {
     width: 100%;
@@ -193,5 +221,18 @@
   // Blogs & News
   .blog-news .blog-news-blocks a {
     width: 60%;
+  }
+
+  // Footer
+  .footer-container .main-footer .links-section {
+    width: 100%;
+  }
+  .small-items {
+    display: flex;
+    flex-flow: column wrap;
+
+    .small-col {
+      padding: 0.6em 0;
+    }
   }
 }

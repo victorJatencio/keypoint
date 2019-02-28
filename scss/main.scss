@@ -477,7 +477,7 @@ a.flag-position {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba($color: #000000, $alpha: 0.4);
+      background-color: rgba($color: #000000, $alpha: 0.6);
       margin: 0 auto;
       top: 0;
       left: 0;
@@ -527,7 +527,8 @@ a.flag-position {
     }
 
     p {
-      font-size: 1em;
+      font-size: 1.3em;
+      font-weight: 300;
       position: relative;
     }
 
@@ -538,9 +539,10 @@ a.flag-position {
       padding: 1em;
       position: relative;
       display: block;
-      width: 40%;
+      max-width: 300px;
+      width: 100%;
       margin: 0 auto;
-      border: 1px solid #ffb547;
+      border: 3px solid #ffb547;
       border-radius: 3px;
       text-align: left;
       transition: all 0.2s ease-in;
@@ -550,13 +552,11 @@ a.flag-position {
       }
     }
 
-    span {
-      display: block;
-      width: 4em;
-      height: 3px;
-      background: $light-orange;
-      position: relative;
-      margin: 0 auto;
+    span.btn-long-arrow {
+      margin-left: 10px;
+      img {
+        width: 40%;
+      }
     }
   }
 }
@@ -582,7 +582,7 @@ a.flag-position {
     position: relative;
     margin: 0 auto;
     background: #fff;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 3px;
     box-shadow: 0 10px 40px rgba($color: #000000, $alpha: 0.3);
 
@@ -655,14 +655,27 @@ a.flag-position {
       a {
         color: $dark-blue;
         font-size: 14px;
+        &:hover {
+          color: $main-layout-color;
+        }
       }
 
-      button.sign-up {
+      button.modal-form {
         border: 1px solid $main-layout-color;
         padding: 1em;
+        max-width: 300px;
         width: 100%;
         border-radius: 3px;
         margin-top: 1em;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background: $main-layout-color;
+
+          a {
+            color: #fff;
+          }
+        }
 
         a {
           text-transform: uppercase;
