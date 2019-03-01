@@ -1,7 +1,4 @@
 /* Search button styles */
-#overlay-form {
-  display: none;
-}
 .search-wrap {
   margin: 0 0 0 auto;
 
@@ -23,6 +20,15 @@
   justify-content: center;
   align-content: center;
   text-align: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+
+  &.show-search {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .btn--search-close {
@@ -31,7 +37,6 @@
   top: 1.25em;
   right: 1.25em;
   color: $strong-orange;
-  // display: none;
 }
 
 .top__search__input {
@@ -99,6 +104,7 @@
   flex-direction: row;
   width: 75%;
   align-self: center;
+  margin: 0 auto;
 }
 
 .search__suggestion {

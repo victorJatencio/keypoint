@@ -134,6 +134,10 @@ a.flag-position {
 }
 
 /* Main Nav Styles */
+.fixed-nav nav.main-nav {
+  position: fixed;
+  top: 0;
+}
 .kpi-logo a img {
   width: 222px;
   vertical-align: middle;

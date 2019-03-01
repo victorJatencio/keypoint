@@ -28,7 +28,6 @@
 
   header nav.main-nav {
     padding: 0 15px;
-    position: fixed;
     overflow: hidden;
 
     ul {
@@ -233,6 +232,18 @@
 
     .small-col {
       padding: 0.6em 0;
+    }
+  }
+
+  // Overlay Search Styles
+  .search__related {
+    flex-direction: column;
+    .search__suggestion {
+      width: 100%;
+
+      &:nth-child(2) {
+        margin: 3em 0;
+      }
     }
   }
 }

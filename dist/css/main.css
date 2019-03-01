@@ -40,9 +40,6 @@ button {
 
 /* Media Query Mixins */
 /* Search button styles */
-#overlay-form {
-  display: none; }
-
 .search-wrap {
   margin: 0 0 0 auto; }
   .search-wrap #btn-search {
@@ -60,7 +57,14 @@ button {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  text-align: center; }
+  text-align: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear; }
+  .top-search-wrapper.show-search {
+    visibility: visible;
+    opacity: 1; }
 
 .btn--search-close {
   font-size: 2em;
@@ -124,7 +128,8 @@ button {
   display: flex;
   flex-direction: row;
   width: 75%;
-  align-self: center; }
+  align-self: center;
+  margin: 0 auto; }
 
 .search__suggestion {
   width: 33.33%;
@@ -253,6 +258,10 @@ a.flag-position {
   background-position-y: -216px; }
 
 /* Main Nav Styles */
+.fixed-nav nav.main-nav {
+  position: fixed;
+  top: 0; }
+
 .kpi-logo a img {
   width: 222px;
   vertical-align: middle; }
@@ -716,7 +725,6 @@ a.flag-position {
         float: right; }
   header nav.main-nav {
     padding: 0 15px;
-    position: fixed;
     overflow: hidden; }
     header nav.main-nav ul {
       top: 113px;
@@ -833,4 +841,10 @@ a.flag-position {
     display: flex;
     flex-flow: column wrap; }
     .small-items .small-col {
-      padding: 0.6em 0; } }
+      padding: 0.6em 0; }
+  .search__related {
+    flex-direction: column; }
+    .search__related .search__suggestion {
+      width: 100%; }
+      .search__related .search__suggestion:nth-child(2) {
+        margin: 3em 0; } }
