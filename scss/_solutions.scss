@@ -1,0 +1,46 @@
+.results {
+  margin: 6em 0;
+
+  .cards-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .result-card {
+      background: #fff;
+      border-radius: 2px;
+      border: 1px solid $light-grey;
+      padding: 1em;
+      width: 32%;
+      margin: 10px 0;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $secondary-blue;
+        font-weight: normal;
+      }
+      p {
+        font-size: 16px;
+      }
+
+      a {
+        color: $main-layout-color;
+        align-self: flex-end;
+        position: relative;
+        margin-top: auto;
+        padding-top: 1em;
+
+        i {
+          border: 1px solid #55565a;
+          padding: 5px;
+          width: 28px;
+          text-align: center;
+          border-radius: 50%;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

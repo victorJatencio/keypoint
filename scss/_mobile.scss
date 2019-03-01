@@ -157,6 +157,14 @@
   .footer-container .main-footer .links-section {
     width: 50%;
   }
+
+  // Solutions conteiners styles
+  .results .cards-grid {
+    justify-content: space-around;
+  }
+  .results .cards-grid .result-card {
+    width: 47%;
+  }
 }
 
 // Smartphones
@@ -245,5 +253,10 @@
         margin: 3em 0;
       }
     }
+  }
+
+  // Solutions conteiners styles
+  .results .cards-grid .result-card {
+    width: 100%;
   }
 }

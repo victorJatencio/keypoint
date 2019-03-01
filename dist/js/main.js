@@ -66,4 +66,16 @@ $(document).ready(function() {
     });
   }
   mainNav();
+
+  // Select fields widget
+  $(".results").hide();
+
+  $(".industry")
+    .change(function() {
+      //previous selected ones hidden
+      $("[id^=industry-]").hide();
+
+      $("#industry-" + $(this).val()).show();
+    })
+    .change();
 });
