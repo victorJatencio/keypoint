@@ -158,14 +158,14 @@ button {
   .results .cards-grid {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; }
+    justify-content: flex-start; }
     .results .cards-grid .result-card {
       background: #fff;
       border-radius: 2px;
       border: 1px solid #e2e2e2;
       padding: 1em;
       width: 32%;
-      margin: 10px 0;
+      margin: 5px;
       height: auto;
       display: flex;
       flex-direction: column; }

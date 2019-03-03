@@ -4,7 +4,7 @@
   .cards-grid {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     .result-card {
       background: #fff;
@@ -12,7 +12,7 @@
       border: 1px solid $light-grey;
       padding: 1em;
       width: 32%;
-      margin: 10px 0;
+      margin: 5px;
       height: auto;
       display: flex;
       flex-direction: column;

@@ -74,8 +74,19 @@ $(document).ready(function() {
     .change(function() {
       //previous selected ones hidden
       $("[id^=industry-]").hide();
+      $("[id^=role-]").hide();
 
       $("#industry-" + $(this).val()).show();
+    })
+    .change();
+
+  $(".role")
+    .change(function() {
+      //previous selected ones hidden
+      $("[id^=role-]").hide();
+      $("[id^=industry-]").hide();
+
+      $("#role-" + $(this).val()).show();
     })
     .change();
 });
