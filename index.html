@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Keypoint Intelligence</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, maximum-scale=1.0,
+      minimum-scale=1.0"
+      />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+      />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+      />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="util-nav">
+        <div class="container">
+          <!-- asign layout width-->
+          <div class="util-nav-content">
+            <ul class="util-nav-list">
+              <li class="dropdown">
+                <a href="#" class="flag-position">
+                  <span class="flag-icon usa-flag"></span>
+                  <span>United States</span>
+                  <i
+                    class="fa fa-angle-down direction-icon"
+                    style="margin-left: 2px;"></i>
+                </a>
+                <ul class="dropdown-menu flags">
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon hnk-flag"></span>
+                      <span>Hong Kong</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon sin-flag"></span>
+                      <span>Singapore</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon aus-flag"></span>
+                      <span>Australia</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon uk-flag"></span>
+                      <span>United Kingdom</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon usa-flag"></span>
+                      <span>United States</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon frc-flag"></span>
+                      <span>France</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon ger-flag"></span>
+                      <span>Germany</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon ita-flag"></span>
+                      <span>Italy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon jap-flag"></span>
+                      <span>Japan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-position">
+                      <span class="flag-icon kor-flag"></span>
+                      <span>Korea</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i
+                    class="fa fa-user-friends icon"
+                    style="font-size: 16px;"></i>
+                  bliq demo
+                </a>
+              </li>
+              <li id="user-signin" class="dropdown">
+                <a href="#">
+                  <i class="fas fa-user-circle" style="font-size: 16px;"></i>
+                  sign in
+                  <i class="fa fa-angle-down direction-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" target="_blank">bliQ</a></li>
+                  <li><a href="#" target="_blank">InfoTrends</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="search-wrap">
+                  <button id="btn-search" class="btn btn--search">
+                    <i class="fa fa-search icon"></i>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Nav -->
+      <nav id="nav" class="main-nav">
+        <div class="container">
+          <div class="branding kpi-logo">
+            <a href="#"><img src="images/Keypoint_logo.png" alt="Keypint
+                Intelligence"
+                /></a>
+          </div>
+
+          <!-- menu button -->
+          <div class="menu_bar">
+            <a href="#" class="bt-menu"><span><i class="fas fa-bars"></i></span></a>
+          </div>
+
+          <ul>
+            <li class="submenu sub-active">
+              <a href="#" class="active">Tools & Assessments
+                <span class="caret"><i class="fa fa-angle-down direction-icon"></i></span></a>
+              <ul class="sub-children">
+                <li><a href="#">bliQ</a></li>
+                <li><a href="#">Costumer Engagement Platform (CEP)</a></li>
+                <li><a href="#">Vertical Market Segmentation (VMS)</a></li>
+                <li><a href="#">Market Assessment Tools (MAT)</a></li>
+                <li><a href="#">IT Capabilities</a></li>
+                <li><a href="#">Quarterly Tracking</a></li>
+                <li><a href="#">Channel Mapping</a></li>
+                <li><a href="#">Assessment Tools</a></li>
+                <li><a href="#">Sales Training</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Research<span class="caret"><i class="fa fa-angle-down
+                    direction-icon"></i></span></a>
+              <ul class="sub-children">
+                <li><a href="#">Advisory Services</a></li>
+                <li><a href="#">Multi-clients</a></li>
+                <li><a href="#">Custom Research & Consulting</a></li>
+                <li><a href="#">Report Store</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Lab Testing & Awards<span class="caret"><i class="fa
+                    fa-angle-down direction-icon"></i></span></a>
+              <ul class="sub-children">
+                <li><a href="#">Test Reports</a></li>
+                <li><a href="#">Pick Awards</a></li>
+                <li><a href="#">Custom Testing</a></li>
+                <li><a href="#">Testing Process</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Resources<span class="caret"><i class="fa
+                    fa-angle-down direction-icon"></i></span></a>
+              <ul class="sub-children">
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Podcasts</a></li>
+                <li><a href="#">Industry News</a></li>
+                <li><a href="#">White Papers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">About Us<span class="caret"><i class="fa fa-angle-down
+                    direction-icon"></i></span></a>
+              <ul class="sub-children">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Management Team</a></li>
+                <li><a href="#">Analyst Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end container -->
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="hero jumbotron_section">
+        <div class="container jumbo--content">
+          <h1>We turn data into intelligence.</h1>
+          <p>
+            Keypoint Intelligence cuts through the noise of data to offer you
+            unbiased insights and responsive tools
+          </p>
+        </div>
+      </div>
+      <!-- End Hero -->
+
+      <div class="select select_widget">
+        <p>Explore the right solution for you</p>
+
+        <select class="industry" required>
+          <option value="">Select Your Industry</option>
+          <option value="1">Graphic Arts</option>
+          <option value="2">Sign & Display</option>
+          <option value="3">Print On Demand</option>
+          <option value="4">Decorative Printing</option>
+          <option value="5">Packaging</option>
+          <option value="6">Photo Hardware & Software</option>
+          <option value="7">Photo Printing & Products</option>
+          <option value="8">Virtual & Augmented Reality</option>
+          <option value="9">Professional Photography</option>
+          <option value="10">Office Supplies</option>
+          <option value="11">Office Hardware</option>
+          <option value="12">Managed Services</option>
+          <option value="13">Network & Document Management</option>
+          <option value="14">Vertical Focused Industries</option> </select><!-- Industry -->
+        <span>OR</span>
+        <select class="role" required>
+          <option value="">Select Your Role</option>
+          <option value="1">Print Services Provider</option>
+          <option value="2">Service Provider</option>
+          <option value="3">In-plant</option>
+          <option value="4">Equipment Vendor</option>
+          <option value="5">Software Vendor</option>
+          <option value="6">Suppliers/Dealers</option>
+          <option value="7">Retailers</option>
+          <option value="8">OEM</option>
+          <option value="9">Commercial Printer</option>
+          <option value="10">Technology Provider</option>
+          <option value="11">Sales</option>
+          <option value="12">Product Management</option>
+          <option value="13">Marketing</option>
+          <option value="14">Market Research</option>
+          <option value="15">Product Planning</option> </select><!--Role-->
+        <form action="/search" class="search-box">
+          <input class="search__widget" type="search" name="searchtext" />
+          <i class="fa fa-search icon"></i>
+        </form>
+      </div>
+      <!-- End Select Widget -->
+      <!-- Solutions results -->
+      <div id="industry-1" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – PWS + BDS</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – PWS + BDS</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Workflow Assessments</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities?</h3>
+              <p>
+                Nulla facilisi morbi blandit augue interdum, tempus ante quis,
+                dignissim est fusce id urna pharetra.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ Wide Format</h3>
+              <p>
+                Praesent vestibulum, ante eu accumsan feugiat, felis metus
+                venenatis orci, eget pharetra massa tellus ut dui.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-2" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – WFP, CDLP?</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – WFP, CDLP?</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracker</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ – Wide Format</h3>
+              <p>
+                Nulla facilisi morbi blandit augue interdum, tempus ante quis,
+                dignissim est fusce id urna pharetra.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-3" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – ODS</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – ODS</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracker</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ Wide Format and Production</h3>
+              <p>
+                Nulla facilisi morbi blandit augue interdum, tempus ante quis,
+                dignissim est fusce id urna pharetra.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-4" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – FIPS</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – FIPS</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="industry-5" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – CDLP</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – CDLP</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-6" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Consumer</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Consumer</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research - Consumer</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-7" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Consumer</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Consumer</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research - Consumer</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-8" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Consumer</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Consumer</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research - Consumer</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-9" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Consumer</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Consumer</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research - Consumer</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-10" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Office</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Office</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ Database</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Consumables and Supplies Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-11" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Office</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Office</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Vertical Market Segmentation</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-12" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Office</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Office</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-13" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – Office</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients – Office</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ Software Database</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Software Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Software Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="industry-14" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research – VMBO</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>PaceSetter Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Vertical Marketing Segmentation</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solutions Roles -->
+      <div id="role-1" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>PSP’s</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients – BDS Related</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Leadership Group</h3>
+              <p>
+                Nulla facilisi morbi blandit augue interdum, tempus ante quis,
+                dignissim est fusce id urna pharetra.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Syndicated Research - BDS</h3>
+              <p>
+                Praesent vestibulum, ante eu accumsan feugiat, felis metus
+                venenatis orci, eget pharetra massa tellus ut dui.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>CEP – Kate’s version</h3>
+              <p>
+                Praesent vestibulum, ante eu accumsan feugiat, felis metus
+                venenatis orci, eget pharetra massa tellus ut dui.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments?</h3>
+              <p>
+                Praesent vestibulum, ante eu accumsan feugiat, felis metus
+                venenatis orci, eget pharetra massa tellus ut dui.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-2" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Leadership Group</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Syndicated Research - BDS</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-3" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>OEM</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracking</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>CEP?</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments?</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Public Testing</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-4" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliq</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracking</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>CEP?</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Channel Mapping</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments?</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-5" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliq</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Channel Mapping</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Public Testing</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-6" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>bliq</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Channel Mapping</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>CEP</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Vertical Market Segmentation</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Market Analytics Tool</h3>
+              <p>
+                Proin sit amet sapien efficitur, auctor sem vel, euismod augue
+                duis mollis ornare mauri.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-7" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-8" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliq</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracking</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>CEP?</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-clients</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments?</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Public Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-9" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-10" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Quarterly Tracking</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-11" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Test Reports</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Market Analytics Tool</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-12" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Sales Training</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients
+              </h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research
+              </h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Public Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Award</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-13" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Test Reports</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Customer Engagement Platform</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Vertical Market Segmentation</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-14" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Research</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Custom Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>IT Capabilities</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="role-15" class="results">
+        <div class="container">
+          <div class="cards-grid">
+            <div class="result-card">
+              <h3>Syndicated Research</h3>
+              <p>
+                Quisque sodales risus vitae sapien accumsan dapibus. Aliquam
+                erat volutpat maecenas ac nisi sed neque sodales maximus eu quis
+                nunc.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>bliQ</h3>
+              <p>
+                Pellentesque sem turpis, efficitur eget varius eget, vestibulum
+                eget turpis phasellus vitae libero.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Test Reports</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Awards</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Assessments</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Multi-Clients</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+            <div class="result-card">
+              <h3>Public Testing</h3>
+              <p>
+                Vestibulum eget turpis phasellus vitae libero quis lectus
+                vestibulum tincidunt quis ac purus.
+              </p>
+              <a href="#">More <i class="fas fa-angle-right decor"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Three Cards Section -->
+      <div class="cards cards__section">
+        <div class="container">
+          <div class="card__wrappers">
+            <div class="item-01 card--item">
+              <div class="card-heading">
+                <h2>
+                  <strong>Free Webinar:</strong> Being a Data Driven Dealership
+                </h2>
+              </div>
+
+              <div class="card__caption">
+                <p>
+                  Learn how to use data marketing & analytics to drive strategic
+                  revenue growth in this free webinar November 16
+                </p>
+                <a href="#"><i class="fas fa-angle-right decor"></i>Read More</a>
+              </div>
+            </div>
+            <div class="item-02 card--item">
+              <div class="card-heading">
+                <h2>Outstanding Copier MFPs Earn BLI Pick Awards</h2>
+              </div>
+              <div class="card__caption">
+                <p>See who took home awards</p>
+                <a href="#"><i class="fas fa-angle-right decor"></i>Read More</a>
+              </div>
+            </div>
+            <div class="item-03 card--item">
+              <div class="card-heading">
+                <h2>Gen Z to Boomers Study Now Available</h2>
+              </div>
+              <div class="card__caption">
+                <p>
+                  Learn how to increase share of wallet with key demographic
+                  groups for imaging-related products and services
+                </p>
+                <a href="#"><i class="fas fa-angle-right decor"></i>Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blogs & News -->
+      <div class="blog-news">
+        <div class="container">
+          <div class="blog-news-message">
+            <h2>
+              Keypoint Intelligence is a one-stop shop for the digital imaging
+              industry
+            </h2>
+            <p>
+              With our unparalleled tools and unmatched depth of knowledge,
+              Keypoint Intelligence cuts through the noise of data to offer you
+              unbiased insights and responsive tools.
+            </p>
+          </div>
+        </div>
+        <div class="blog-news-blocks">
+          <div class="blog-block">
+            <h2>Blogs</h2>
+
+            <p>
+              MTEX Solutions: A Key Iberian Manufacturer, Sprouting New
+              Industrial Printers
+            </p>
+            <a href="#">Read More<span class="btn-long-arrow"><img
+                  src="images/long-arrow.png" /></span></a>
+          </div>
+          <div class="news-block">
+            <h2>Industry News</h2>
+
+            <p>
+              Toshiba Introduces Powerful Desktop Multifunction Printer Trio
+            </p>
+            <a href="#">Read More<span class="btn-long-arrow"><img
+                  src="images/long-arrow.png" /></span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standalone search -->
+      <div class="single-search">
+        <h2>Still Looking for Something?</h2>
+        <form action="/search" class="search-body">
+          <i class="fa fa-search icon"></i>
+          <input
+            class="search__widget"
+            type="search"
+            name="searchtext"
+            placeholder="Search"
+            />
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="container">
+            <div class="main-footer">
+              <div class="links-section">
+                <h3>Empower Your Sales & Marketing Team</h3>
+                <ul>
+                  <li>
+                    <a href="#">bliq</a>
+                  </li>
+                  <li>
+                    <a href="#">sales training</a>
+                  </li>
+                  <li>
+                    <a href="#">customer engagement platform</a>
+                  </li>
+                  <li>
+                    <a href="#">vertical market segmentation</a>
+                  </li>
+                  <li>
+                    <a href="#">it driven capabilities</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="links-section">
+                <h3>Make Informed Decisions</h3>
+                <ul>
+                  <li>
+                    <a href="#">Advisory Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Multi-Client Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Custom Research & Consulting</a>
+                  </li>
+                  <li>
+                    <a href="#">Quarterly Placements Tracker</a>
+                  </li>
+                  <li>
+                    <a href="#">Lab Test Reports</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="links-section">
+                <h3>Stand Out From The Competition</h3>
+                <ul>
+                  <li>
+                    <a href="#">Bli Awards</a>
+                  </li>
+                  <li>
+                    <a href="#">Custom Lab Testing</a>
+                  </li>
+                  <li>
+                    <a href="#">Market Analytics Tool</a>
+                  </li>
+                  <li>
+                    <a href="#">Workflow Assessments</a>
+                  </li>
+                  <li>
+                    <a href="#">Channel Mapping</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="links-section">
+                <h3>Stand Out From The Competition</h3>
+                <button class="modal-form"><a href="#">Sign Up</a></button>
+              </div>
+              <div class="links-section">
+                <h3>Form More Information</h3>
+                <button id="contact-us" class="modal-form"><a href="#">Contact
+                    Us</a></button>
+              </div>
+              <div class="links-section">
+                <h3>Keypoint Intelligence New Jersey Office</h3>
+                <p>80 Little Falls Road, Suite 5 Fairfield, NJ 07004</p>
+                <p>Tel: <a href="tel:+1 973-797-2100">+1 973-797-2100</a></p>
+              </div>
+              <div class="links-section">
+                <h3>Keypoint Intelligence Massachusetts Office</h3>
+                <p>
+                  91 Libbey Industrial Parkway, Suite 300 Weymouth, MA 02189
+                </p>
+                <p>Tel: <a href="tel:+1 781-616-2100">+1 781-616-2100</a></p>
+              </div>
+              <div class="links-section">
+                <h3>Find Our Apps in the Apple Store and Google Play</h3>
+                <ul class="apps-section">
+                  <li><a href="#">bliQ App</a></li>
+                  <li><a href="#">InfoTrends App</a></li>
+                  <li>
+                    <ul class="app-links">
+                      <li>
+                        <a href="#"><img src="images/apple-128x128.png"
+                            alt="Apple Store"
+                            /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img
+                            src="images/google-128x128.png"
+                            alt="Google Play"
+                            /></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end container -->
+          <div class="small-footer">
+            <div class="container">
+              <div class="small-items">
+                <div class="small-col">
+                  <ul class="small--social">
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="small-col" style="text-align: center;">
+                  &copy;2019 Keypoint Intelligence
+                </div>
+                <div class="small-col" style="text-align: right;">
+                  Privacy Policy
+                </div>
+              </div>
+            </div>
+            <!-- end container -->
+          </div>
+        </div>
+      </footer>
+
+      <!-- Overlay Search -->
+      <div id="overlay-form" class="overlay-wrapper">
+        <!-- X close button -->
+        <button
+          id="top-search-close"
+          class="btn btn--search-close"
+          aria-label="Close search form">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Search form input -->
+        <form id="search-field" class="search__form" action="">
+          <input
+            class="top__search__input"
+            name="search"
+            type="search"
+            placeholder="Search"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            />
+          <span class="search__info">Hit enter to search or ESC to close</span>
+        </form>
+
+        <!-- search__related -->
+        <div class="search__related">
+          <div class="search__suggestion">
+            <h3>About the Industry</h3>
+            <p>
+              #Brother #Canon #Lexmark #Toshiba #Xerox #Sharp #Epson #HP
+              #Kyocera #Alaris
+            </p>
+          </div>
+          <div class="search__suggestion">
+            <h3>Products</h3>
+            <p>
+              #bliQ #TCO #bliQmobile #Compare #Seals #Awards #Articles
+            </p>
+          </div>
+          <div class="search__suggestion">
+            <h3>Services</h3>
+            <p>
+              #bliQ #TCO #bliQmobile #Compare #Seals #Awards #Articles
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact us form -->
+      <div id="contact-form" class="modal-overlay">
+        <div class="modal">
+          <div class="brand-area">
+            <div class="form-logo">
+              <img src="images/Keypoint_logo.png" alt="Keypoint Intelligence"
+                width="170">
+            </div>
+            <!-- X close button -->
+            <button
+              id="top-search-close"
+              class="btn btn-modal-close"
+              aria-label="Close search form">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="form-area">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="inputs-area">
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Full Name">
+                </div>
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Email">
+                </div>
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Company">
+                </div>
+                <div class="column">
+                  <textarea class="form-type" id="validationTextarea"
+                    placeholder="Comment"></textarea>
+                </div>
+              </div>
+
+              <div class="recaptcha">reCAPTCHA...</div>
+
+              <button class="btn-submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
