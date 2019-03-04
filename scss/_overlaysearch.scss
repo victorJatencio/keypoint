@@ -8,8 +8,8 @@
   }
 }
 
-/* Search Overlay Styles */
-.top-search-wrapper {
+/* Overlay forms style */
+.overlay-wrapper {
   background-color: rgba($dark-blue, 0.9);
   position: fixed;
   width: 100%;
@@ -64,7 +64,7 @@
 .top__search__input::-webkit-input-placeholder {
   /* Webkit, Blink, Edge */
   opacity: 0.3;
-  color: #060919;
+  color: #555d86;
 }
 
 .top__search__input::-moz-placeholder {

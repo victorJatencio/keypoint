@@ -1,7 +1,7 @@
-//Select DOM Items
+//Select Search Items
 const formReset = document.getElementById("search-field");
 const searchIcon = document.querySelector(".btn--search");
-const searchOverlay = document.querySelector(".top-search-wrapper");
+const searchOverlay = document.querySelector(".overlay-wrapper");
 const closeOverlay = document.querySelector(".btn--search-close");
 
 // Set Initial state of search overlay
@@ -19,6 +19,27 @@ function openSearch() {
   } else {
     searchOverlay.classList.remove("show-search");
     // Set Search State
+    showSearch = false;
+  }
+}
+
+//Select Modal Items
+const openModal = document.getElementById("contact-us");
+const closeModal = document.querySelector(".btn-modal-close");
+const modal = document.querySelector(".modal-overlay");
+
+openModal.addEventListener("click", showModal);
+closeModal.addEventListener("click", showModal);
+
+function showModal(e) {
+  e.preventDefault();
+  if (!showSearch) {
+    modal.classList.add("show-search");
+    // Set Modal State
+    showSearch = true;
+  } else {
+    modal.classList.remove("show-search");
+    // Set Modal State
     showSearch = false;
   }
 }

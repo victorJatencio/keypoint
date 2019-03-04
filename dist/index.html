@@ -2018,7 +2018,8 @@
               </div>
               <div class="links-section">
                 <h3>Form More Information</h3>
-                <button class="modal-form"><a href="#">Contact Us</a></button>
+                <button id="contact-us" class="modal-form"><a href="#">Contact
+                    Us</a></button>
               </div>
               <div class="links-section">
                 <h3>Keypoint Intelligence New Jersey Office</h3>
@@ -2087,7 +2088,7 @@
       </footer>
 
       <!-- Overlay Search -->
-      <div id="overlay-form" class="top-search-wrapper">
+      <div id="overlay-form" class="overlay-wrapper">
         <!-- X close button -->
         <button
           id="top-search-close"
@@ -2131,6 +2132,49 @@
             <p>
               #bliQ #TCO #bliQmobile #Compare #Seals #Awards #Articles
             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact us form -->
+      <div id="contact-form" class="modal-overlay">
+        <div class="modal">
+          <div class="brand-area">
+            <div class="form-logo">
+              <img src="images/Keypoint_logo.png" alt="Keypoint Intelligence"
+                width="170">
+            </div>
+            <!-- X close button -->
+            <button
+              id="top-search-close"
+              class="btn btn-modal-close"
+              aria-label="Close search form">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="form-area">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="inputs-area">
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Full Name">
+                </div>
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Email">
+                </div>
+                <div class="column">
+                  <input type="text" class="form-type" placeholder="Company">
+                </div>
+                <div class="column">
+                  <textarea class="form-type" id="validationTextarea"
+                    placeholder="Comment"></textarea>
+                </div>
+              </div>
+
+              <div class="recaptcha">reCAPTCHA...</div>
+
+              <button class="btn-submit" type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </div>
